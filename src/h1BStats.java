@@ -244,7 +244,13 @@ public class h1BStats {
 		
 	}
 	
-	
+		 public static List<String> parseLine(String cvsLine) {
+	        return parseLine(cvsLine, DEFAULT_SEPARATOR, DEFAULT_QUOTE);
+	    }
+
+	    public static List<String> parseLine(String cvsLine, char separators) {
+	        return parseLine(cvsLine, separators, DEFAULT_QUOTE);
+	    }
 
 	
 	public static List<String> parseLine(String cvsLine, char separators, char customQuote) {

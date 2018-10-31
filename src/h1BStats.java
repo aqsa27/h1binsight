@@ -97,6 +97,7 @@ public class h1BStats {
     	
     	List<Integer> l = new ArrayList<Integer>(occupation.values());
     	Collections.sort(l);
+	if(l.size()>10)
     	l = l.subList(l.size()-10,l.size());
     	HashMap<String, Integer> Sortedoccupation = new HashMap<>();	
     	for(String key : occupation.keySet())
@@ -122,6 +123,7 @@ public class h1BStats {
     	
     	List<Integer> l = new ArrayList<Integer>(state.values());
     	Collections.sort(l);
+	if(l.size()>10)
     	l = l.subList(l.size()-10,l.size());
     	HashMap<String, Integer> SortedStates = new HashMap<>();	
     	for(String key : state.keySet())
